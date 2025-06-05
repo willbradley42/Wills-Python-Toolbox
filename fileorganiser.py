@@ -5,7 +5,7 @@ import logging
 # Define file type categories and their corresponding extensions
 FILE_CATEGORIES = {
     "Images": [".jpg", ".jpeg", ".png", ".gif", ".bmp", ".tiff", ".webp", ".svg", ".heic"],
-    "Documents": [".pdf", ".doc", ".docx", ".txt", ".rtf", ".odt", ".xls", ".xlsx", ".ppt", ".pptx", ".csv"],
+    "Documents": [".pdf", ".doc", ".docx", ".txt", ".rtf", ".odt"],
     "Videos": [".mp4", ".mov", ".avi", ".mkv", ".wmv", ".flv", ".webm"],
     "Audio": [".mp3", ".wav", ".aac", ".ogg", ".flac", ".m4a"],
     "Archives": [".zip", ".rar", ".tar", ".gz", ".7z"],
