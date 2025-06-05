@@ -13,7 +13,7 @@ This list will (hopefully) get bigger as time goes on, as I come up with new ide
 
 Sorts all files in a directory into subdirectories, based on the extension. Current support for:
 
-<ol>
+<ul>
   <li>Images: .jpg, .jpeg, .png, .gif, .bmp, .tiff, .webp, .svg, .heic</li>
   <li>Documents: .pdf, .doc, .docx, .txt, .rtf, .odt, .xls, .xlsx, .csv</li>
   <li>Videos: .mp4, .mov, .avi, .mkv, .wmv, .flv, .webm</li>
@@ -24,7 +24,7 @@ Sorts all files in a directory into subdirectories, based on the extension. Curr
   <li>Presentations: .ppt, .pptx, .key, .odp</li>
   <li>Spreadsheets: .xls, .xlsx, .ods, .csv</li>
   <li>Text Docs: .txt, .md, .log</li>
-</ol>
+</ul>
 
 Any extensions not listed above are in the "Other" category, and will be placed in a subdirectory called "Others".
 
