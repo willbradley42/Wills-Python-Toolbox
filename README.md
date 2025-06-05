@@ -15,7 +15,7 @@ Sorts all files in a directory into subdirectories, based on the extension. Curr
 
 <ul>
   <li>Images: .jpg, .jpeg, .png, .gif, .bmp, .tiff, .webp, .svg, .heic</li>
-  <li>Documents: .pdf, .doc, .docx, .txt, .rtf, .odt, .xls, .xlsx, .csv</li>
+  <li>Documents: .pdf, .doc, .docx, .txt, .rtf, .odt, .xls, .xlsx</li>
   <li>Videos: .mp4, .mov, .avi, .mkv, .wmv, .flv, .webm</li>
   <li>Audio: .mp3, .wav, .aac, .ogg, .flac, .m4a</li>
   <li>Archives: .zip, .rar, .tar, .gz, .7z</li>
