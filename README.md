@@ -7,7 +7,7 @@ python3 <toolname>.py
 `
 
 # Tools
-This list will (hopefully) get bigger as time goes on, and I come up with new ideas.
+This list will (hopefully) get bigger as time goes on, as I come up with new ideas.
 
 ## fileorganiser.py
 
