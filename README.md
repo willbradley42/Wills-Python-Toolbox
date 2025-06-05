@@ -7,8 +7,9 @@ python3 <toolname>.py
 `
 
 # Tools
+This list will (hopefully) get bigger as time goes on, and I come up with new ideas.
 
-# fileorganiser.py
+## fileorganiser.py
 
 Sorts all files in a directory into subdirectories, based on the extension. Current support for:
 
@@ -28,7 +29,7 @@ Sorts all files in a directory into subdirectories, based on the extension. Curr
 Any extensions not listed above are in the "Other" category, and will be placed in a subdirectory called "Others".
 
 
-# watermarker.py
+## watermarker.py
 
 Dependencies: Pillow
 
