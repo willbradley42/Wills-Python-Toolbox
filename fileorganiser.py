@@ -29,7 +29,7 @@ def get_target_directory():
              Returns None if the input is invalid or the user cancels.
     """
     while True:
-        target_dir = input("Enter the full path to the directory you want to organize: ").strip()
+        target_dir = input("Enter the full path to the directory you want to organise: ").strip()
         if not target_dir:
             logging.warning("No directory entered. Exiting.")
             return None
@@ -41,18 +41,18 @@ def get_target_directory():
             if choice != 'y':
                 return None
 
-def organize_files(directory_path):
+def organise_files(directory_path):
     """
-    Organizes files in the specified directory into subfolders based on their extensions.
+    organises files in the specified directory into subfolders based on their extensions.
 
     Args:
-        directory_path (str): The absolute path to the directory to organize.
+        directory_path (str): The absolute path to the directory to organise.
     """
     if not directory_path:
         return
 
-    logging.info(f"Starting to organize files in: {directory_path}")
-    organized_count = 0
+    logging.info(f"Starting to organise files in: {directory_path}")
+    organised_count = 0
     skipped_count = 0
 
     # Iterate over each item in the target directory
@@ -114,33 +114,33 @@ def organize_files(directory_path):
         try:
             shutil.move(item_path, destination_path)
             logging.info(f"Moved '{item_name}' to '{target_folder_name}' folder.")
-            organized_count += 1
+            organised_count += 1
         except Exception as e:
             logging.error(f"Error moving file {item_name}: {e}")
             skipped_count += 1
 
     logging.info("--------------------------------------------------")
     logging.info("File organization complete.")
-    logging.info(f"Total files processed (attempted to move): {organized_count + skipped_count}")
-    logging.info(f"Files successfully organized: {organized_count}")
+    logging.info(f"Total files processed (attempted to move): {organised_count + skipped_count}")
+    logging.info(f"Files successfully organised: {organised_count}")
     logging.info(f"Files skipped (due to errors or no extension): {skipped_count}")
     logging.info("--------------------------------------------------")
 
 
 if __name__ == "__main__":
     print("==============================================")
-    print("          PYTHON FILE ORGANIZER             ")
+    print("          PYTHON FILE organiseR             ")
     print("==============================================")
-    print("This script will organize files in a directory")
+    print("This script will organise files in a directory")
     print("by moving them into subfolders based on type.")
     print("----------------------------------------------\n")
 
     target_dir = get_target_directory()
 
     if target_dir:
-        confirm = input(f"Are you sure you want to organize files in '{target_dir}'? (y/n): ").lower()
+        confirm = input(f"Are you sure you want to organise files in '{target_dir}'? (y/n): ").lower()
         if confirm == 'y':
-            organize_files(target_dir)
+            organise_files(target_dir)
         else:
             logging.info("Organization cancelled by user.")
     else:
